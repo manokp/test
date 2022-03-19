@@ -1,0 +1,41 @@
+push or pull based
+
+puppet/Chef agent in each server
+
+ansible:
+others are: salt, stack
+agent less
+
+anisble controller machine must be linuxe based
+
+package Manager:
+python pip install ansible
+ubuntu apt install name
+centos  yum install ansible
+
+local resolution done from /etc/hosts, but in realtime prod area, we do thru DNS server
+if hostname not found, it will look at nssswithc.conf
+authentication:
+passwordless ssh
+ssh-keygen
+ssh-copy-id servername1
+for-loop.sh 
+
+ansible good for OS patching, app deployments, Configuration mgmt, contounous Develivery
+
+ansible uses inventory file (ansible --version), find config location
+version 2.9
+
+look at /etc/ansible/ansible.cfg
+/etc/ansible/hosts (default inventory file)
+host groups (3 dev test prod)
+
+adhoc commands:
+ansible modules also called tasks or basic unit work done in ansible
+ansible playbook (a set of intructions)-a YAML file
+
+ansible host-group -l server1 -m ping (one server out of group) or
+ansible host-group -m ping (all servers from group)
+ansible -i /etc/newhostgroup -m ping (server names saved in different config dir)
+
+
