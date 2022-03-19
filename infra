@@ -40,3 +40,7 @@ ansible -i /etc/newhostgroup -m ping (server names saved in different config dir
 -b (becom option for super user privelege)
 
 handlers are like paragraph. only executed up on notify and changes/chksum were done
+
+ansible-playbook playbookname --syntax-check
+PMD - program mistake detector
+YAMLLINT yaml validator
