@@ -37,5 +37,6 @@ ansible playbook (a set of intructions)-a YAML file
 ansible host-group -l server1 -m ping (one server out of group) or
 ansible host-group -m ping (all servers from group)
 ansible -i /etc/newhostgroup -m ping (server names saved in different config dir)
+-b (becom option for super user privelege)
 
-
+handlers are like paragraph. only executed up on notify and changes/chksum were done
