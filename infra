@@ -39,7 +39,7 @@ ansible host-group -m ping (all servers from group)
 ansible -i /etc/newhostgroup -m ping (server names saved in different config dir)
 -b (becom option for super user privelege)
 
-handlers are like paragraph. only executed up on notify and changes/chksum were done
+handlers are like paragraph. only executed up on notify in playbook, and changes/chksum were done means there was a change in file
 
 ansible-playbook playbookname --syntax-check
 PMD - program mistake detector
